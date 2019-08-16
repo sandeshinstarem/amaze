@@ -53,12 +53,13 @@ li a {
   background-position: top;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position: 0 -180px;
   background-size: cover;
 }
 
 .showcase-heading {
   position: absolute;
-  top: 9.375rem;
+  top: 45%;
   width: 100%;
   font-size: 6.25rem;
   font-weight: 400;
@@ -79,7 +80,7 @@ li a {
 }
 
 .card {
-  background-color: #537afc;
+  background-color: #752eff;
   color: #fff;
   padding: 2.5rem;
   text-align: center;
@@ -141,8 +142,9 @@ footer {
 
 .footer-top {
   margin: 1.875rem;
-  color: #abd7e9;
+  color: #fff;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -169,5 +171,21 @@ footer {
 @media screen and (max-width: 600px) {
   html {
     font-size: 10px;
+  }
+  #intro-showcase {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .showcase-heading {
+    font-size: 3.25rem;
+  }
+
+  
+  .menu-links ul {
+    margin-right: 2.5rem;
+  }
+  .footer-top {
+    flex-direction: column;
   }
 }
