@@ -1,127 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png"/>
-    <title>Amaze</title>
-  </head>
 
-  <body>
-    <header id="amaze-header" class="amaze-header container">
-      <a href="" class="branding">
-        <img src="./assets/amaze.png" />
-      </a>
-      <nav id="amaze-nav">
-        <ul class="nav-links">
-          <li><a href="">What is it?</a></li>
-          <li><a href="">How does it work?</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section id="intro-showcase" class="amaze-showcase">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
+  <title>Amaze</title>
+</head>
+
+<body>
+
+  <header id="amaze-header" class="amaze-header container">
+    <a href="" class="branding">
+      <img src="./assets/amaze.png" />
+    </a>
+    <nav id="amaze-nav">
+      <ul class="nav-links nav-desktop">
+        <li><a href="">What is it?</a></li>
+        <li><a href="">How does it work?</a></li>
+      </ul>
+      <span class="nav-mobile">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="">What is it?</a>
+          <a href="">How does it work?</a>
+        </div>
+        <span class="hamburger" onclick="openNav()">&#9776;</span>
+      </span>
+    </nav>
+  </header>
+  <section id="intro-showcase" class="amaze-showcase">
+    <div class="amaze-download">
       <h1 class="showcase-heading">One Card for global citizens</h1>
-      <div class="amaze-download">
-        <a href=""><img src="./assets/apple.png" alt=""></a>
-        <a href=""><img src="./assets/google.png" alt=""></a>
-      </div>
-    </section>
+      <a href=""><img src="./assets/apple.png" alt=""></a>
+      <a href=""><img src="./assets/google.png" alt=""></a>
+    </div>
+  </section>
 
-    <!-- Card Features -->
-    <section class="card-features container">
-      <div id="combine-cards">
-        <div class="section-card">
-          <h1>Combine all your cards into one</h1>
-          <p>Simplify your wallet and add all your bank and credit cards to Amaze</p>
-          <button class="section-card-collapsible">FIND OUT MORE</button>
-          <div class="section-card-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-        <div class="section-card-img">
-          <img src="assets/Onboarding_01_All In One.gif" alt="logo" />
+  <!-- Card Features -->
+  <section class="card-features container">
+    <div id="combine-cards">
+      <div class="section-card">
+        <h1>Combine all your cards into one</h1>
+        <p>Simplify your wallet and add all your bank and credit cards to Amaze</p>
+        <button class="section-card-collapsible">FIND OUT MORE</button>
+        <div class="section-card-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
         </div>
       </div>
-      <div id="track-all">
-        <div class="section-card">
-          <h1>Track all of your spending</h1>
-          <p>See all your transactions across all your cards in real-time</p>
-          <button class="section-card-collapsible">FIND OUT MORE</button>
-          <div class="section-card-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-        <div class="section-card-img">
-          <img src="assets/Onboarding_01_All In One.gif" alt="logo" />
+      <div class="section-card-img">
+        <img src="assets/Onboarding_01_All In One.gif" alt="logo" />
+      </div>
+    </div>
+    <div id="track-all">
+      <div class="section-card">
+        <h1>Track all of your spending</h1>
+        <p>See all your transactions across all your cards in real-time</p>
+        <button class="section-card-collapsible">FIND OUT MORE</button>
+        <div class="section-card-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
         </div>
       </div>
-      <div id="overseas-fees">
-        <div class="section-card">
-          <h1>Avoid all overseas fees</h1>
-          <p>Save on all foreign transactions with super low fees whenever you’re travelling</p>
-          <button class="section-card-collapsible">FIND OUT MORE</button>
-          <div class="section-card-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-        <div class="section-card-img">
-          <img src="assets/Onboarding_03_Avoid Overseas Fees.gif" alt="logo" />
+      <div class="section-card-img">
+        <img src="assets/Onboarding_01_All In One.gif" alt="logo" />
+      </div>
+    </div>
+    <div id="overseas-fees">
+      <div class="section-card">
+        <h1>Avoid all overseas fees</h1>
+        <p>Save on all foreign transactions with super low fees whenever you’re travelling</p>
+        <button class="section-card-collapsible">FIND OUT MORE</button>
+        <div class="section-card-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
         </div>
       </div>
-      <div id="reward">
-        <div class="section-card">
-          <h1>Keep all of your rewards</h1>
-          <p>Save on all foreign transactions with super low fees whenever you’re travelling</p>
-          <button class="section-card-collapsible">FIND OUT MORE</button>
-          <div class="section-card-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
+      <div class="section-card-img">
+        <img src="assets/Onboarding_03_Avoid Overseas Fees.gif" alt="logo" />
+      </div>
+    </div>
+    <div id="reward">
+      <div class="section-card">
+        <h1>Keep all of your rewards</h1>
+        <p>Save on all foreign transactions with super low fees whenever you’re travelling</p>
+        <button class="section-card-collapsible">FIND OUT MORE</button>
+        <div class="section-card-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
         </div>
-        <div class="section-card-img">
-          <img src="assets/Onboarding_04_Keep Your Rewards.gif" alt="logo" />
-        </div>
+      </div>
+      <div class="section-card-img">
+        <img src="assets/Onboarding_04_Keep Your Rewards.gif" alt="logo" />
+      </div>
+    </div>
+  </section>
+  <section id="" class="card">
+    <h2>One card. Endless possibilities.</h2>
+    <p>Download the app and apply for Amaze card.</p>
+    <div class="download-center">
+      <a href=""><img src="./assets/apple.png" alt=""></a>
+      <a href=""><img src="./assets/google.png" alt=""></a>
+    </div>
+  </section>
+  <footer>
+    <section class="footer-top container">
+      <div class="menu-links">
+        <ul>
+          <li>About Amaze</li>
+          <li>How it Works</li>
+          <li>News</li>
+        </ul>
+        <ul>
+          <li>Terms & Conditions</li>
+          <li>Privacy Policy</li>
+          <li>Financial Protection</li>
+        </ul>
+      </div>
+      <div class="social-links">
+        <ul>
+          <li>facebook</li>
+          <li>insta</li>
+          <li>twitter</li>
+        </ul>
       </div>
     </section>
-    <section id="" class="card">
-      <h2>One card. Endless possibilities.</h2>
-      <p>Download the app and apply for Amaze card.</p>
-      <div class="download-center">
-        <a href=""><img src="./assets/apple.png" alt=""></a>
-        <a href=""><img src="./assets/google.png" alt=""></a>
-      </div>
+    <section class="footer-bottom container">
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae hic reprehenderit distinctio vero harum eius
+        molestias, quam fuga, iusto cupiditate fugiat. Est aspernatur perferendis autem non aliquid iste officiis
+        commodi?sdf
+      </h2>
     </section>
-    <footer>
-      <section class="footer-top container">
-        <div class="menu-links">
-          <ul>
-            <li>About Amaze</li>
-            <li>How it Works</li>
-            <li>News</li>
-          </ul>
-          <ul>
-            <li>Terms & Conditions</li>
-            <li>Privacy Policy</li>
-            <li>Financial Protection</li>
-          </ul>
-        </div>
-        <div class="social-links">
-          <ul>
-            <li>facebook</li>
-            <li>insta</li>
-            <li>twitter</li>
-          </ul>
-        </div>
-      </section>
-      <section class="footer-bottom container">
-        <h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae hic reprehenderit distinctio vero harum eius
-          molestias, quam fuga, iusto cupiditate fugiat. Est aspernatur perferendis autem non aliquid iste officiis
-          commodi?sdf
-        </h2>
-      </section>
-    </footer>
-    <script type="application/javascript" src="index.js"></script>
-  </body>
+  </footer>
+  <script type="application/javascript" src="index.js"></script>
+</body>
+
 </html>

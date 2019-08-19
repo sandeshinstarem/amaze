@@ -22,8 +22,8 @@ header {
 }
 
 .container {
-    width: 90%;
-    margin: auto;
+  width: 90%;
+  margin: auto;
 }
 
 .branding {
@@ -38,6 +38,50 @@ header {
   display: inline-block;
 }
 
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  color: #7b76fc
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: #9879D0;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.nav-mobile {
+  display: none;
+}
+
 li a {
   display: block;
   color: #7b76fc;
@@ -50,7 +94,7 @@ li a {
 
 #intro-showcase {
   background-image: url('./assets/showcase.jpg');
-  height: 100vh;
+  height: 85vh;
   position: relative;
   top: 0;
   left: 0;
@@ -62,14 +106,14 @@ li a {
 }
 
 .showcase-heading {
-  position: absolute;
-  top: 45%;
+  /* position: absolute;
+  top: 45%; */
   width: 100%;
   font-size: 6.25rem;
   font-weight: 400;
   text-align: center;
   color: #fff;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .amaze-download {
@@ -187,75 +231,72 @@ footer {
 }
 
 .section-card h1 {
-    color: #9879D0;
+  color: #9879D0;
 }
 
 .section-card p {
-    color: #160f30;
+  color: #160f30;
 }
 
 .section-card-collapsible {
-    padding: 15px 60px;
-    background-color: #9879D0;
-    border: none;
-    border-radius: 50px;
-    color: #fff;
-    font-weight: 600;
+  padding: 15px 60px;
+  background-color: #9879D0;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 600;
 }
 
-.active, .section-card-collapsible:hover,
-.section-card-collapsible:active,
-.section-card-collapsible:focus {
-    outline: none;
-    border: none;
-    background-color: #4b3d65;
+.active, .section-card-collapsible:hover, .section-card-collapsible:active, .section-card-collapsible:focus {
+  outline: none;
+  border: none;
+  background-color: #4b3d65;
 }
 
 .section-card-content {
-    margin: 1rem 0;
-    max-height: 0;
-    overflow: hidden;
-    -webkit-transition: max-height 0.2s ease-out;
-    -moz-transition: max-height 0.2s ease-out;
-    -o-transition: max-height 0.2s ease-out;
-    transition: max-height 0.2s ease-out;
+  margin: 1rem 0;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  -moz-transition: max-height 0.2s ease-out;
+  -o-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
 }
 
 @media screen and (min-width: 320px) and (max-width: 720px) {
   html {
     font-size: 10px;
   }
+  .nav-mobile {
+    display: block;
+  }
+  .nav-desktop {
+    display: none;
+  }
   #intro-showcase {
     background-position: center;
     background-size: cover;
   }
-
   .showcase-heading {
     font-size: 3.25rem;
   }
-
-
   .menu-links ul {
     margin-right: 2.5rem;
   }
   .footer-top {
     flex-direction: column;
   }
-
   #combine-cards, #track-all, #overseas-fees, #reward {
     flex-direction: column;
   }
-
   .section-card {
     order: 2;
     margin: auto;
   }
-
   .section-card-img {
     order: 1;
     margin: auto;
   }
-
   .section-card-collapsible {
     padding: 10px 20px;
     font-size: 11px;
