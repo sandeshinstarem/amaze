@@ -61,7 +61,8 @@ header {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #f1f1f1;;
+  color: #f1f1f1;
+  ;
   display: block;
   transition: 0.3s;
 }
@@ -263,7 +264,43 @@ footer {
   transition: max-height 0.2s ease-out;
 }
 
-@media screen and (min-width: 320px) and (max-width: 720px) {
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  #intro-showcase {
+    background-position: center;
+    background-size: cover;
+  }
+  .showcase-heading {
+    font-size: 4.25rem;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .nav-mobile {
+    display: block;
+  }
+  .nav-desktop {
+    display: none;
+  }
+  #intro-showcase {
+    background-position: center;
+    background-size: cover;
+  }
+  .showcase-heading {
+    font-size: 3.25rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
   html {
     font-size: 10px;
   }
