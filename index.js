@@ -13,6 +13,29 @@ for (let i = 0; i < sectionCard.length; i++) {
   });
 }
 
+// Card Feature gif auto refresh
+
+function isScrolledIntoView(elem) {
+  const docViewTop = this.scrollY;
+  const docViewBottom = docViewTop + document.documentElement.clientHeight;
+  const elemTop = elem.offsetTop;
+  const elemBottom = elemTop + elem.height;
+  return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+window.addEventListener("scroll", function () {
+  const bodyElement = document.querySelector("body");
+  const sectionCardImg = document.getElementsByClassName("section-card-img");
+  for (let i = 0; i < sectionCardImg.length; i++) {
+    if (isScrolledIntoView(sectionCardImg[i].childNodes[1])) {
+      sectionCardImg[i].childNodes[1].src = sectionCardImg[i].childNodes[1].src.split('?')[0] + '?' + Date.now();
+    }
+  }
+
+} , false);
+
+
+
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";

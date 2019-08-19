@@ -26,8 +26,16 @@ header {
   margin: auto;
 }
 
+.amaze-header {
+  height: 5rem;
+}
+
 .branding {
   cursor: pointer;
+}
+.branding img {
+  width: 5.75rem;
+  margin-top: 1rem;
 }
 
 .nav-links {
@@ -82,13 +90,16 @@ header {
   display: none;
 }
 
+li:first-child {
+  margin-right: 1rem;
+}
+
 li a {
   display: block;
   color: #7b76fc;
   text-align: center;
-  padding: 0.875rem 1rem;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-decoration: none;
 }
 
