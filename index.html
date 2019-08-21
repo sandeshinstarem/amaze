@@ -7,26 +7,27 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./styles.css">
   <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <title>Amaze</title>
 </head>
 
 <body>
 
-  <header id="amaze-header" class="amaze-header container">
+  <header id="amaze-header" class="amaze-header">
     <a href="" class="branding">
-      <img src="./assets/amaze.png" />
+      <img src="./assets/amaze.png" alt="logo"/>
     </a>
-    <nav id="amaze-nav">
+    <nav id="amaze-nav" class="nav-bar">
       <ul class="nav-links nav-desktop">
         <li><a href="">What is it?</a></li>
         <li><a href="">How does it work?</a></li>
       </ul>
       <span class="nav-mobile">
-        <div id="mySidenav" class="sidenav">
+        <span id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <a href="">What is it?</a>
           <a href="">How does it work?</a>
-        </div>
+        </span>
         <span class="hamburger" onclick="openNav()">&#9776;</span>
       </span>
     </nav>
@@ -42,7 +43,7 @@
   <!-- Card Features -->
   <section class="card-features container">
     <div id="combine-cards">
-      <div class="section-card">
+      <div class="section-card animated fadeInLeft">
         <h1>Combine all your cards into one</h1>
         <p>Simplify your wallet and add all your bank and credit cards to Amaze</p>
         <button class="section-card-collapsible">FIND OUT MORE</button>
@@ -68,7 +69,7 @@
         </div>
       </div>
       <div class="section-card-img">
-        <img src="assets/Onboarding_01_All In One.gif" alt="logo" />
+        <img src="assets/Onboarding_02_Track Spending.gif" alt="logo" />
       </div>
     </div>
     <div id="overseas-fees">
