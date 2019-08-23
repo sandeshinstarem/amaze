@@ -48,8 +48,7 @@ header {
 }
 
 .branding img {
-  width: 6.75rem;
-  height: 3.5rem;
+  height: 60px;
   margin-top: 1rem;
 }
 
@@ -115,7 +114,6 @@ li:first-child {
 .nav-links li a {
   display: block;
   text-align: center;
-  font-weight: bold;
   font-size: 1rem;
   text-decoration: none;
   color: #ac37eb;
@@ -213,6 +211,7 @@ li:first-child {
 
 #combine-cards, #track-all, #overseas-fees, #reward {
   display: flex;
+  margin-bottom: 200px;
   flex-direction: row;
 }
 
@@ -221,32 +220,31 @@ li:first-child {
 }
 
 .section-card {
-  width: 25%;
-  margin-bottom: 3.125rem;
-  width: 45%;
+  /* margin-bottom: 3.125rem; */
+  width: 50%;
+  margin-left: 42px;
   order: 1;
-  margin: 15% 0;
 }
 
-.section-card-img {
-  text-align: center;
-  width: 55%;
+.section-card h2 {
+  margin-top: 3rem;
   margin-bottom: 1.875rem;
-  order: 2;
-}
-
-.section-card-img img {
-  width: 100%;
-}
-
-.section-card h1 {
-  margin-bottom: 1.56rem;
-  color: #9879D0;
+  font-family: 'WorkSans';
+  width: 19.375rem;
+  font-size: 2.125rem;
+  color: #ac37eb;
+  font-weight: bold;
+  letter-spacing: -0.31px;
 }
 
 .section-card p {
-  margin-bottom: 1.56rem;
-  color: #160f30;
+  width: 349px;
+  margin-bottom: 1.875rem;
+  font-family: 'WorkSans';
+  font-size: 1.2rem;
+  line-height: 1.56;
+  letter-spacing: -0.21px;
+  color: #300551;
 }
 
 footer {
@@ -302,17 +300,10 @@ footer {
   display: inline-block;
 }
 
-.section-card h1 {
-  color: #9879D0;
-}
-
-.section-card p {
-  color: #160f30;
-}
-
 .section-card-collapsible {
   padding: 15px 60px;
-  background-color: #9879D0;
+  letter-spacing: 0.63px;
+  background-color: #ac37eb;
   border: none;
   border-radius: 50px;
   color: #fff;
@@ -424,4 +415,143 @@ footer {
     padding: 10px 20px;
     font-size: 11px;
   }
+}
+
+.section-card-img {
+  position: relative;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 1.875rem;
+  order: 2;
+}
+
+.group-8 {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  object-fit: contain;
+  transform: rotate(-175deg);
+  z-index: 0;
+}
+
+.fill-4 {
+  position: absolute;
+  top: -25%;
+  left: 12%;
+  height: 25rem;
+  object-fit: contain;
+  transform: rotate(-362deg);
+  z-index: 1;
+}
+
+.group-6 {
+  position: absolute;
+  top: -10%;
+  left: 15%;
+  height: 31.75rem;
+  object-fit: contain;
+  transform: rotate(-362deg);
+  z-index: 2;
+}
+
+.fill-8-copy {
+  position: absolute;
+  height: 23.06rem;
+  right: 0;
+  /* top: 7.5rem; */
+  bottom: -70%;
+  object-fit: contain;
+  transform: rotate(0deg);
+}
+
+.fill-8 {
+  position: absolute;
+  top: 60%;
+  left: -10%;
+  width: 240px;
+  height: 278px;
+  z-index: 0;
+  object-fit: contain;
+  transform: rotate(-181deg);
+}
+
+.iPhone-2 {
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  width: 374px;
+  height: 601px;
+  z-index: 2;
+  object-fit: contain;
+  transform: rotate(0deg);
+}
+
+.fill-42 {
+  width: 637px;
+  height: 378.9px;
+  object-fit: contain;
+  /* transform: rotate(-139deg) !important; */
+  position: absolute;
+  bottom: -70%;
+  right: 0%;
+  z-index: 0;
+}
+
+.group-12 {
+  position: absolute;
+  top: 0%;
+  left: -20%;
+  width: 278px;
+  height: 306px;
+  object-fit: contain;
+  transform: rotate(103deg);
+  z-index: 0
+}
+
+.group-5 {
+  position: absolute;
+  top: 30%;
+  left: -5%;
+  width: 142px;
+  height: 167px;
+  object-fit: contain;
+  z-index: 1;
+  transform: rotate(66deg);
+}
+
+.group-7 {
+  position: absolute;
+  top:25%;
+  left: 5%;
+  /* width: 271px; */
+  height: 340px;
+  object-fit: contain;
+  transform: rotate(66deg);
+}
+
+.fill-1 {
+  position: absolute;
+  top: 75%;
+  left: 15%;
+  height: 171px;
+  object-fit: contain;
+  transform: rotate(-35deg);
+}
+
+.fill-82 {
+  position: absolute;
+  bottom: -10%;
+  left: 45%;
+  height: 71.5px;
+  object-fit: contain;
+  transform: rotate(-44deg);
+}
+
+.group-121 {
+  position: absolute;
+  bottom: -10%;
+  width: 49px;
+  height: 39px;
+  object-fit: contain;
+  transform: rotate(-68deg);
 }

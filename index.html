@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
   <link rel="stylesheet" href="css/styles-amaze.css">
   <script src="js/modernizr.js"></script> <!-- Modernizr -->
+  <script src="js/rellax/rellax.min.js"></script> <!-- Modernizr -->
   <title>One Card for global citizens - InstaReM Amaze</title>
 </head>
 
@@ -20,69 +21,78 @@
     </a>
     <nav id="amaze-nav" class="nav-bar">
       <ul class="nav-links nav-desktop">
-        <li><a href="">What is it?</a></li>
-        <li><a href="">How does it work?</a></li>
+        <li><a href="">Reserve Your Card</a></li>
+        <!-- <li><a href="">How does it work?</a></li> -->
       </ul>
       <span class="nav-mobile">
         <span id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="">What is it?</a>
-          <a href="">How does it work?</a>
+          <a href="">Reserve Your Card</a>
+          <!-- <a href="">What is it?</a>
+          <a href="">How does it work?</a> -->
         </span>
         <span class="hamburger" onclick="openNav()">&#9776;</span>
       </span>
     </nav>
   </header>
 
+
   <section class="cd-section">
     <div id="intro-showcase" class="amaze-showcase">
-      <div class="amaze-download">
-        <h1 class="showcase-heading">One Card for global citizens</h1>
-        <a href="#" class="btn btn-round btn-secondary">Secure Your Amaze card</a>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div id="combine-cards" class="container">
-      <div class="section-card animated fadeInLeft">
-        <h1>Combine all your cards into one</h1>
-        <p>Simplify your wallet and add all your bank and credit cards to Amaze</p>
-        <button class="btn section-card-collapsible">FIND OUT MORE</button>
-        <div class="section-card-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</p>
+      <div class="amaze-showcase">
+        <div class="amaze-download">
+          <h1 class="showcase-heading">One Card for global citizens</h1>
+          <a href="#" class="btn btn-round btn-secondary">Reserve & Get A Free Card</a>
         </div>
       </div>
-      <div class="section-card-img">
-        <img class="card-gif-img" src="assets/Onboarding_01_All In One.gif" alt="logo" />
+    </div>
+  </section>
+  <section id="combine-cards">
+    <div class="section-card">
+      <h2 data-scroll>Combine all your cards into one</h2>
+      <p data-scroll>Simplify your wallet and add all your bank and credit cards to Amaze</p>
+      <button class="btn section-card-collapsible">FIND OUT MORE</button>
+      <div class="section-card-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat.</p>
       </div>
+    </div>
+    <div class="section-card-img">
+      <img class="rellax group-8" data-rellax-speed="2.10" data-rellax-percentage="0" src="assets/group-8.png"
+        alt="logo" />
+      <img class="rellax fill-4" data-rellax-speed="5" data-rellax-percentage="0.5" src="assets/fill-4@2x.png"
+        alt="logo" />
+      <img class="rellax group-6" data-rellax-speed="6" data-rellax-percentage="0.5" src="assets/group-6@3x.png"
+        alt="logo" />
+      <img class="fill-8-copy" data-rellax-speed="5" data-rellax-percentage="0" src="assets/fill-8-copy.png"
+        alt="logo" />
+  </section>
+
+  <section id="track-all">
+    <div class="section-card">
+      <h2>Track all of your spending</h2>
+      <p>See all your transactions across all your cards in real-time</p>
+      <button class="btn section-card-collapsible">FIND OUT MORE</button>
+      <div class="section-card-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat.</p>
+      </div>
+    </div>
+    <div class="section-card-img">
+      <img class="rellax fill-8" data-rellax-speed="3" data-rellax-percentage="0" src="assets/fill-8.png" alt="logo" />
+      <img class="rellax iPhone-2" data-rellax-speed="4" data-rellax-percentage="0.5"
+        src="assets/amaze-i-phone-mock-up-2.png" alt="logo" />
+      <img class="rellax fill-42" data-rellax-speed="6" data-rellax-percentage="0.5" src="assets/fill-4@2x.png"
+        alt="logo" />
     </div>
   </section>
 
   <section>
-    <div id="track-all" class="container">
+    <div id="overseas-fees">
       <div class="section-card">
-        <h1>Track all of your spending</h1>
-        <p>See all your transactions across all your cards in real-time</p>
-        <button class="btn section-card-collapsible">FIND OUT MORE</button>
-        <div class="section-card-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</p>
-        </div>
-      </div>
-      <div class="section-card-img">
-        <img src="assets/Onboarding_02_Track Spending.gif" alt="logo" />
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div id="overseas-fees" class="container">
-      <div class="section-card">
-        <h1>Avoid all overseas fees</h1>
+        <h2>Avoid all overseas fees</h2>
         <p>Save on all foreign transactions with super low fees whenever you’re travelling</p>
         <button class="btn section-card-collapsible">FIND OUT MORE</button>
         <div class="section-card-content">
@@ -92,7 +102,18 @@
         </div>
       </div>
       <div class="section-card-img">
-        <img src="assets/Onboarding_03_Avoid Overseas Fees.gif" alt="logo" />
+        <img class="rellax group-12" data-rellax-speed="3" data-rellax-percentage="0" src="assets/group-12-copy.png"
+          alt="logo" />
+        <img class="rellax group-5" data-rellax-speed="4" data-rellax-percentage="0.5" src="assets/group-5.png"
+          alt="logo" />
+        <img class="rellax group-7" data-rellax-speed="6" data-rellax-percentage="0.5" src="assets/group-7.png"
+          alt="logo" />
+        <img class="rellax fill-1" data-rellax-speed="4" data-rellax-percentage="0.5" src="assets/fill-1@2x.png"
+          alt="logo" />
+        <img class="rellax fill-82" data-rellax-speed="4" data-rellax-percentage="0.5" src="assets/fill-82.png"
+          alt="logo" />
+        <img class="rellax group-121" data-rellax-speed="4" data-rellax-percentage="0.5"
+          src="assets/group-12-copy@2x.png" alt="logo" />
       </div>
     </div>
   </section>
@@ -100,7 +121,7 @@
   <section>
     <div id="reward" class="container">
       <div class="section-card">
-        <h1>Keep all of your rewards</h1>
+        <h2>Keep all of your rewards</h2>
         <p>Save on all foreign transactions with super low fees whenever you’re travelling</p>
         <button class="btn section-card-collapsible">FIND OUT MORE</button>
         <div class="section-card-content">
@@ -110,10 +131,13 @@
         </div>
       </div>
       <div class="section-card-img">
-        <img src="assets/Onboarding_04_Keep Your Rewards.gif" alt="logo" />
+        <img class="rellax" src="assets/group-10.png" alt="logo" />
+        <img class="rellax" src="assets/group-9.png" alt="logo" />
+        <img class="rellax" src="assets/group-2.png" alt="logo" />
       </div>
     </div>
   </section>
+
 
   <section class="card">
     <h2>One card. Endless possibilities.</h2>
@@ -158,6 +182,10 @@
   <script src="js/velocity.min.js"></script>
   <script src="js/velocity.ui.min.js"></script>
   <script src="js/main.js"></script> <!-- Resource jQuery -->
+  <script>
+    var rellax = new Rellax('.rellax');
+    // rellax.refresh();
+  </script>
 </body>
 
 </html>
