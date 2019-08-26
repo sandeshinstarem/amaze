@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="161" height="148" viewBox="0 0 161 148">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#231F44" d="M1.222 59.464l60.81-57.449a4 4 0 0 1 5.088-.335l91.489 66.05a4 4 0 0 1 1.06 5.346l-44.96 72.712a4 4 0 0 1-5.818 1.084L1.553 65.56a4 4 0 0 1-.331-6.096z"/>
+        <text fill="#FFF" font-family="Averta-Regular, Averta" font-size="56" letter-spacing="3.36" opacity=".38" transform="rotate(-53 86.392 63.232)">
+            <tspan x="64.387" y="84.238">$</tspan>
+        </text>
+    </g>
+</svg>
